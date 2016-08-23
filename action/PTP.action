@@ -2,6 +2,7 @@
 float32[] ptp_goal_rad
 bool[] ptp_mask
 float32 vel_percent
+bool use_relative
 ---
 # Define the result
 ---
