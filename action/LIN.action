@@ -1,7 +1,7 @@
 # Goal
-geometry_msgs/Vector3 XYZ
-geometry_msgs/Vector3 ABC
-bool use_relative
+geometry_msgs/Vector3 XYZ # x,y,z in meters
+geometry_msgs/Vector3 RPY # roll, pitch, yaw in radians
+bool use_relative # use LIN or LIN_REL
 ---
 # Result
 ---
