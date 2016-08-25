@@ -1,10 +1,13 @@
-# Define the goal
-float32[] ptp_goal_rad
-bool[] ptp_mask
-float32 vel_percent
-bool use_relative
+int32 Joint     = 0
+int32 Cartesian = 1
+
+float32[] ptp_goal          # Goal in radians for PTP
+bool[] ptp_mask             # Mask for the joints
+geometry_msgs/Vector3 XYZ   # x,y,z in meters
+geometry_msgs/Vector3 RPY   # roll, pitch, yaw
+float32 vel_percent         # set the max velocity
+int32 ptp_input_type        # Use Joints or IK
+bool use_relative           # Use PTP or PTP_REL
+bool use_radians            # Use radians
 ---
-# Define the result
 ---
-# Define a feedback message
-bool is_running
