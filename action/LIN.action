@@ -1,7 +1,10 @@
 # Goal
-geometry_msgs/Vector3 XYZ # x,y,z in meters
-geometry_msgs/Vector3 RPY # roll, pitch, yaw in radians
-bool use_relative # use LIN or LIN_REL
+geometry_msgs/Vector3 XYZ                   # x,y,z in meters
+geometry_msgs/Vector3 RPY                   # roll, pitch, yaw in radians
+geometry_msgs/Vector3 XYZ_mask              # x,y,z mask (0 or 1)
+geometry_msgs/Vector3 RPY_mask              # roll, pitch, yaw mask (0 or 1)
+bool use_relative                           # use LIN or LIN_REL
+float32 vel_percent                         # set the max velocity
 ---
 # Result
 ---

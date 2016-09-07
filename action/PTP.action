@@ -1,13 +1,22 @@
 int32 Joint     = 0
 int32 Cartesian = 1
 
-float32[] ptp_goal          # Goal in radians for PTP
-bool[] ptp_mask             # Mask for the joints
-geometry_msgs/Vector3 XYZ   # x,y,z in meters
-geometry_msgs/Vector3 RPY   # roll, pitch, yaw
-float32 vel_percent         # set the max velocity
-int32 ptp_input_type        # Use Joints or IK
-bool use_relative           # Use PTP or PTP_REL
-bool use_radians            # Use radians
+# TODO : Use these, rename PTP to KRL_CMD
+#int32 PTP = 0
+#int32 LIN = 1
+#int32 CIRC = 2
+
+
+float32[] ptp_goal                  # Goal in radians for PTP
+bool[] ptp_mask                     # Mask for the joints
+geometry_msgs/Vector3 XYZ           # x,y,z in meters
+geometry_msgs/Vector3 RPY           # roll, pitch, yaw
+geometry_msgs/Vector3 XYZ_mask      # x,y,z mask (0 or 1)
+geometry_msgs/Vector3 RPY_mask      # roll, pitch, yaw mask (0 or 1)
+float32 vel_percent                 # set the max velocity
+int32 ptp_input_type                # Use Joints or IK
+bool use_relative                   # Use PTP or PTP_REL
+bool use_radians                    # Use radians
+
 ---
 ---
