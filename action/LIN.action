@@ -6,6 +6,8 @@ geometry_msgs/Vector3 RPY_mask              # roll, pitch, yaw mask (0 or 1)
 bool use_relative                           # use LIN or LIN_REL
 float32 vel_percent                         # set the max velocity
 bool in_tool_frame                          # Use Tool frame (Base default)
+bool stop_on_force                          # Stop when max_allowed_force is reach during the motion
+float64 max_allowed_force                   # When this force is reach, goal is aborted
 ---
 # Result
 ---
